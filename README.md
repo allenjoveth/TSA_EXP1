@@ -1,7 +1,8 @@
 # Ex.No: 01A PLOT A TIME SERIES DATA
-###  Date: 
+###  Date: Video_Games_Sales
 
 # AIM:
+#### Dataset : 
 To Develop a python program to Plot a time series data (population/ market price of a commodity
 /temperature.
 # ALGORITHM:
@@ -12,21 +13,29 @@ To Develop a python program to Plot a time series data (population/ market price
 5. Display the graph.
 # PROGRAM:
 
+```
+from matplotlib import pyplot as plt
+import pandas as pd
 
+df = pd.read_csv("/content/Video_Games_Sales.csv")
 
+print(df.head())
 
+print(df.dtypes)
 
+plt.title('Time Series Plot of Video Game Global Sales')
+plt.xlabel('Year')
+plt.ylabel('Global Sales (Millions)')
 
-
-
-
-
+plt.plot(df['Year_of_Release'], df['Global_Sales'], label = 'Global Sales')
+plt.legend()
+plt.grid(True)
+plt.show()
+```
 
 # OUTPUT:
 
-
-
-
+<img width="704" height="518" alt="Screenshot 2026-04-22 111124" src="https://github.com/user-attachments/assets/58b71534-46e2-4a9d-a040-407a99881368" />
 
 
 # RESULT:
