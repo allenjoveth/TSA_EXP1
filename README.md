@@ -1,8 +1,8 @@
 # Ex.No: 01A PLOT A TIME SERIES DATA
-###  Date: Video_Games_Sales
+###  Date: 
 
 # AIM:
-#### Dataset : 
+#### Dataset : Video_Games_Sales
 To Develop a python program to Plot a time series data (population/ market price of a commodity
 /temperature.
 # ALGORITHM:
